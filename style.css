@@ -1,7 +1,8 @@
 /* ---------
-NAVIGATION
+IMPORTS CODE
 ------------ */
-@import url('css/site-navigation.css');
+@import url('css/site-navigation.css'); /* NAVIGATION */
+@import url('css/home-header.css'); /* HOME HEADER */
 
 /* ---------
 MAIN
@@ -33,4 +34,6 @@ p {
   font-family: "Lexend", sans-serif;
 }
 
-
+.container {
+  
+}
