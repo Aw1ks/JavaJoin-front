@@ -1,0 +1,807 @@
+/* ========
+SLIDER
+======== */
+
+.container {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  background-color: #191a1a;
+  background-image: linear-gradient(0deg, transparent 24%, var(--container-color) 25%, var(--container-color) 26%, transparent 27%,transparent 74%, var(--container-color) 75%, var(--container-color) 76%, transparent 77%,transparent),
+      linear-gradient(90deg, transparent 24%, var(--container-color) 25%, var(--container-color) 26%, transparent 27%,transparent 74%, var(--container-color) 75%, var(--container-color) 76%, transparent 77%,transparent);
+  background-size: 55px 55px;
+  border-top: 4px solid var(--title-card-color);
+}
+
+.container h2 {
+  text-align: center;
+}
+
+.section-name {
+  position: relative;
+  top: -10px;
+  font-size: 50px;
+  font-weight: 600;
+  color: var(--white-color);
+}
+
+.card__container {
+  margin: 0;
+  padding-bottom: 60px;
+  margin-top: -20px;
+  user-select: none;
+}
+
+.card__container .swiper {
+  margin-inline: 3rem;
+}
+
+.card__content {
+  margin-inline: 1.75rem;
+  border-radius: 1.25rem;
+  overflow: hidden;
+}
+
+.card__data {
+  border-radius: 1rem;
+  position: relative;
+  height: 680px;
+  z-index: 10;
+}
+
+.swiper-button-prev:after,
+.swiper-button-next:after {
+  content: "";
+}
+
+.swiper-button-prev,
+.swiper-button-next {
+  width: initial;
+  height: initial;
+  font-size: 3rem;
+  color: var(--second-color);
+  display: none;
+}
+
+.swiper-button-prev {
+  left: 0;
+}
+
+.swiper-button-next {
+  right: 0;
+}
+
+.swiper-pagination {
+    position: relative;
+    top: 30px;
+}
+
+.swiper-pagination-bullet {
+  background-color: #cf824f9a;
+  opacity: 1;
+}
+
+.swiper-pagination-bullet-active {
+  background-color: var(--second-color);
+}
+
+/* ========
+SALE CARDS
+======== */
+
+.sale-card {
+  display: flex;
+  align-items: center;
+  align-content: space-between;
+  flex-wrap: wrap;
+  width: 100%;
+  height: 680px;
+  background: linear-gradient(to bottom, #F5F5F0, #EDE4D9);
+  border-radius: 30px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  font-family: system-ui, -apple-system, sans-serif;
+  position: relative;
+}
+
+/* ========
+ADD FAVORITE
+======== */
+
+.heart-container {
+  position: relative;
+  top: 20px;
+  left: 85%;
+  position: relative;
+  width: 35px;
+  height: 35px;
+  transition: .3s;
+}
+
+.heart-container .checkbox {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  z-index: 20;
+  cursor: pointer;
+}
+
+.heart-container .svg-container {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.heart-container .svg-outline,
+        .heart-container .svg-filled {
+  fill: var(--heart-color);
+  position: absolute;
+}
+
+.heart-container .svg-filled {
+  animation: keyframes-svg-filled 1s;
+  display: none;
+}
+
+.heart-container .svg-celebrate {
+  position: absolute;
+  animation: keyframes-svg-celebrate .5s;
+  animation-fill-mode: forwards;
+  display: none;
+  stroke: var(--heart-color);
+  fill: var(--heart-color);
+  stroke-width: 2px;
+}
+
+.heart-container .checkbox:checked~.svg-container .svg-filled {
+  display: block
+}
+
+.heart-container .checkbox:checked~.svg-container .svg-celebrate {
+  display: block
+}
+
+@keyframes keyframes-svg-filled {
+  0% {
+    transform: scale(0);
+  }
+
+  25% {
+    transform: scale(1.2);
+  }
+
+  50% {
+    transform: scale(1);
+    filter: brightness(1.5);
+  }
+}
+
+@keyframes keyframes-svg-celebrate {
+  0% {
+    transform: scale(0);
+  }
+
+  50% {
+    opacity: 1;
+    filter: brightness(1.5);
+  }
+
+  100% {
+    transform: scale(1.4);
+    opacity: 0;
+    display: none;
+  }
+}
+
+/* ========
+DRINK IMAGE
+======== */
+
+.drink-image_container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.sale-card_image-background {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+  background: linear-gradient(to right, #D4A574, #8B4513);
+  border-bottom-right-radius: 80px;
+}
+
+.sale-card_drink-icon {
+  width: 45%;
+  height: 150px;
+  margin-bottom: 20px;
+  object-fit: contain;
+  filter: drop-shadow(0 0 15px var(--white-shadow-first-color));
+  transition: 0.8s all;
+}
+
+.image-overlay {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  right: 20px;
+}
+
+/* ========
+CARD CONTAINER
+======== */
+
+.sale-card_container {
+  width: 100%;
+  height: 40%;
+  padding: 20px;
+  padding-top: 20px; 
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  color: #333;
+  transition: 0.8s all;
+}
+
+/* ========
+DRINK NAME
+======== */
+
+.title-and-price {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.sale-card_drink-name {
+  margin: 0;
+  font-size: 28px;
+  font-weight: bold;
+  color: var(--title-card-color);
+}
+
+/* ========
+DRINK PRICE
+======== */
+
+.sale-card_drink-price {
+  font-size: 24px;
+  font-weight: bold;
+  color: var(--title-card-color);
+  margin: 0;
+}
+
+/* ========
+DRINK RATING
+======== */
+
+.rating {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-top: -10px;
+}
+
+.stars {
+  color: #FFD700;
+  font-size: 20px;
+}
+
+.rating-score {
+  font-size: 18px;
+  color: #666;
+}
+
+/* ========
+SALE ADRESS
+======== */
+
+.sale-drink_address {
+  margin-top: -20px;
+  margin-bottom: -20px;
+}
+
+.address span {
+  font-size: 18px;
+}
+
+/* ========
+DESCRIPTION
+======== */
+
+.tabs {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  gap: 0;
+  border-bottom: 1px solid #ddd;
+  margin-bottom: 20px;
+}
+
+.tab-btn {
+  padding: 12px 24px;
+  border: none;
+  background: none;
+  cursor: pointer;
+  font-size: 16px;
+  color: #666;
+  transition: color 0.7s ease;
+}
+
+.tab-btn:hover {
+  color: #333;
+}
+
+.tab-btn.active {
+  color: var(--title-card-color);
+  font-weight: bold;
+}
+
+.tab-indicator {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background: #8B4513;
+  transition: left 0.4s ease, width 0.4s ease;
+}
+
+.sale-card_description {
+  font-size: 14px;
+}
+
+.sale-card_description ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.sale-card_description li {
+  padding-left: 0;
+  color: #333;
+}
+
+/* ========
+CALORIES AND QUANTITY
+======== */
+
+.calories-and-quantity {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  margin-top: -10px;
+}
+
+/* ========
+CALORIES
+======== */
+
+.calories {
+  font-size: 18px;
+  color: #666;
+  align-self: flex-start;
+  height: 25px;
+  width: 50%;
+}
+
+/* ========
+QUANTITY
+======== */
+
+.quantity-control {
+  display: flex;
+  align-items: center;
+  justify-content: right;
+  width: 50%;
+}
+
+.quantity-btn {
+  font-family: none;
+  width: 25px;
+  height: 25px;
+  border: 2px solid #8B4513;
+  border-radius: 10px;
+  background-color: #d3d3d300;
+  color: var(--title-card-color);
+  font-size: 24px;
+  font-weight: bold;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background-color, color 0.3s ease;
+}
+
+.quantity-btn:hover {
+  background-color: var(--title-card-color);
+  color: #f0e6d8;
+}
+
+.quantity-btn:active {
+  background-color: #7e3e11;
+}
+
+.quantity-input {
+  width: 28px;
+  height: 18px;
+  margin-left: 5px;
+  margin-right: 5px;
+  border: none;
+  color: var(--title-card-color);
+  background-color: #f5f5f500;
+  font-size: 25px;
+  font-weight: bold;
+  text-align: center;
+  outline: none;
+  border-left: none;
+  border-right: none;
+}
+
+/* ========
+BYE BUTTON
+======== */
+
+.bye-sale {
+  position: relative;
+  bottom: 20px;
+  margin-top: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  transition: 0.8s all;
+}
+
+.pay-btn {
+  position: relative;
+  padding: 12px 24px;
+  font-size: 16px;
+  background: linear-gradient(to right, #D4A574, #8B4513);
+  color: #f0e6d8;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  transition: all 0.3s ease;
+}
+
+.pay-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.4);
+}
+
+.icon-container {
+  position: relative;
+  width: 24px;
+  height: 24px;
+}
+
+.icon {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 24px;
+  height: 24px;
+  color: #f0e6d8;
+  opacity: 0;
+  visibility: hidden;
+}
+
+.default-icon {
+  opacity: 1;
+  visibility: visible;
+}
+
+.pay-btn:hover .icon {
+  animation: none;
+}
+
+.pay-btn:hover .wallet-icon {
+  opacity: 0;
+  visibility: hidden;
+}
+
+.pay-btn:hover .card-icon {
+  animation: iconRotate 2.5s infinite;
+  animation-delay: 0s;
+}
+
+.pay-btn:hover .payment-icon {
+  animation: iconRotate 2.5s infinite;
+  animation-delay: 0.5s;
+}
+
+.pay-btn:hover .dollar-icon {
+  animation: iconRotate 2.5s infinite;
+  animation-delay: 1s;
+}
+
+.pay-btn:hover .check-icon {
+  animation: iconRotate 2.5s infinite;
+  animation-delay: 1.5s;
+}
+
+.pay-btn:active .icon {
+  animation: none;
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.3s ease;
+}
+
+.pay-btn:active .check-icon {
+  animation: checkmarkAppear 0.6s ease forwards;
+  visibility: visible;
+}
+
+.btn-text {
+  font-weight: 600;
+  font-family:
+    system-ui,
+    -apple-system,
+    sans-serif;
+}
+
+@keyframes iconRotate {
+  0% {
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(10px) scale(0.5);
+  }
+  5% {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0) scale(1);
+  }
+  15% {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0) scale(1);
+  }
+  20% {
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(-10px) scale(0.5);
+  }
+  100% {
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(-10px) scale(0.5);
+  }
+}
+
+@keyframes checkmarkAppear {
+  0% {
+    opacity: 0;
+    transform: scale(0.5) rotate(-45deg);
+  }
+  50% {
+    opacity: 0.5;
+    transform: scale(1.2) rotate(0deg);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1) rotate(0deg);
+  }
+}
+
+/* ========
+SCROLL ANIMATIONS
+======== */
+
+@keyframes fadeInAndSlideUp {
+  from {
+    opacity: 0;
+    transform: translateY(50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeInHeart {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes slideInLeftDrinkName {
+  from {
+    opacity: 0;
+    transform: translateX(-30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes slideInLeftDrinkAddress {
+  from {
+    opacity: 0;
+    transform: translateX(-30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes slideInLeftDescription {
+  from {
+    opacity: 0;
+    transform: translateX(-30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes slideInUpPrice {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes slideInUpCaloriesQuantity {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeInByeSale {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.sale-card.animate-in {
+  animation-name: fadeInAndSlideUp;
+  animation-duration: 0.8s;
+  animation-timing-function: ease-out;
+  animation-fill-mode: forwards;
+}
+
+.sale-card.animate-in .heart-container {
+  animation-name: fadeInHeart;
+  animation-duration: 0.8s;
+  animation-timing-function: ease-out;
+  animation-delay: 0.2s;
+  animation-fill-mode: forwards;
+}
+
+.sale-card.animate-in .sale-card_drink-name {
+  animation-name: slideInLeftDrinkName;
+  animation-duration: 0.6s;
+  animation-timing-function: ease-out;
+  animation-delay: 0s;
+  animation-fill-mode: forwards;
+}
+
+.sale-card.animate-in .sale-card_description {
+  animation-name: slideInLeftDescription;
+  animation-duration: 0.6s;
+  animation-timing-function: ease-out;
+  animation-delay: 0.2s;
+  animation-fill-mode: forwards;
+}
+
+.sale-card.animate-in .sale-card_drink-price {
+  animation-name: slideInUpPrice;
+  animation-duration: 0.6s;
+  animation-timing-function: ease-out;
+  animation-delay: 0s;
+  animation-fill-mode: forwards;
+}
+
+.sale-card.animate-in .calories-and-quantity {
+  animation-name: slideInUpCaloriesQuantity;
+  animation-duration: 0.6s;
+  animation-timing-function: ease-out;
+  animation-delay: 0.2s;
+  animation-fill-mode: forwards;
+}
+
+.sale-card.animate-in .sale-drink_address {
+  animation-name: slideInLeftDrinkAddress;
+  animation-duration: 0.7s;
+  animation-timing-function: ease-out;
+  animation-delay: 0s;
+  animation-fill-mode: forwards;
+}
+
+.sale-card.animate-in .bye-sale {
+  animation-name: fadeInByeSale;
+  animation-duration: 0.8s;
+  animation-timing-function: ease-out;
+  animation-delay: 0.6s;
+  animation-fill-mode: forwards;
+}
+
+.sale-card {
+  opacity: 0;
+}
+
+.sale-card .heart-container,
+.sale-card .sale-card_drink-name,
+.sale-card .sale-card_description,
+.sale-card .sale-card_drink-price,
+.sale-card .calories-and-quantity,
+.sale-card .bye-sale {
+  opacity: 0;
+}
+
+/* ========
+HOVER ANIMATIONS
+======== */
+
+.sale-card:hover .sale-card_drink-name,
+.sale-card:hover .sale-card_drink-price,
+.sale-card:hover .stars {
+  text-shadow: 0 0 10px #e0b4964b, 0 0 20px #e0b4964b, 0 0 30px #e0b4964b;
+  transition: text-shadow 0.8s ease;
+}
+
+.sale-card:hover .sale-card_drink-icon {
+  transform: translateY(-5px);
+  transition: transform 0.8s ease;
+}
+
+.sale-card:hover .sale-card_container,
+.sale-card:hover .bye-sale {
+  transform: translateY(-3px);
+  transition: transform 0.8s ease;
+}
+
+/* ========
+MEDIA
+======== */
+
+@media screen and (max-width: 320px) {
+  .card__data {
+    padding: 1rem;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .card__content {
+    margin-inline: 3rem;
+  }
+
+  .swiper-button-next,
+  .swiper-button-prev {
+    display: block;
+  }
+}
+
+@media screen and (min-width: 1120px) {
+  .swiper-button-prev {
+    left: -1rem;
+  }
+  .swiper-button-next {
+    right: -1rem;
+  }
+}

@@ -30,7 +30,6 @@
 }
 
 .header-content_title {
-  margin-top: -5px;
   font-size: 60px;
   font-weight: 500;
   max-width: 650px;
@@ -38,10 +37,10 @@
   text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.8);
   border-bottom: 4px solid #8d6f4e;
   transition: transform 0.3s ease;
+  padding-bottom: 20px;
 }
 
 .header-content_description {
-  margin-top: -20px;
   font-size: 22px;
   font-weight: 400;
   max-width: 650px;

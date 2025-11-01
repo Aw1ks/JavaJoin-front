@@ -1,0 +1,53 @@
+/* ---------
+IMPORTS CODE
+------------ */
+@import url('site-navigation.css'); /* NAVIGATION */
+@import url('home-header.css'); /* HOME HEADER */
+@import url('sale-slider.css'); /* SALE SLIDER */
+
+/* ---------
+MAIN
+------------ */
+
+@import url('https://fonts.googleapis.com/css2?family=Black+Ops+One&family=Exo+2:ital,wght@0,100..900;1,100..900&family=Francois+One&family=Fugaz+One&family=Hammersmith+One&family=Lexend:wght@100..900&display=swap');
+
+* {
+  font-family: "Francois One", sans-serif;
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: #e1d4c2;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
+
+a {
+  text-decoration: none;
+  color: #282119;
+}
+
+h1 {
+  font-weight: 600;
+}
+
+p {
+  font-family: "Lexend", sans-serif;
+}
+
+:root {
+  /* NAVIGATION */
+  --main-background-color: #a78d78;
+  --background-for-selector-active: #ffeacf;
+
+  /* SALE SLIDER */
+  --second-color: #cf824f;
+  --dark-color: #282119;
+  --white-color: #e6d8bd;
+  --white-shadow-first-color: #e6d8bd6c;
+  --white-shadow-second-color: #e6d8bdc5;
+  --container-color: rgba(114, 114, 114, 0.3);
+  --heart-color: #FFD700;
+  --title-card-color: #8B4513;
+}

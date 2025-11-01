@@ -1,120 +1,736 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="icon" href="images/icons/JavaJoin.png">
-  <link rel="stylesheet" href="style.css">
-  <title>JavaJoin</title>
-</head>
-<body>
+  <html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="images/icons/JavaJoin.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/3.5.0/remixicon.css" crossorigin="">
+    <link rel="stylesheet" href="css/swiper-bundle.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <title>JavaJoin</title>
+  </head>
+  <body>
 
-  <nav class="site-navigation">
-    <div class="left-content">
-      <div class="logo-content">
-        <img src="images/icons/JavaJoin.png" alt="site logo" class="site-logo">
-        <a href="" class="left-link">
-          JavaJoin
+    <nav class="site-navigation">
+      <div class="left-content">
+        <div class="logo-content">
+          <img src="images/icons/JavaJoin.png" alt="site logo" class="site-logo">
+          <a href="" class="left-link">
+            JavaJoin
+          </a>
+        </div>
+      </div>
+
+      <div class="center-content">
+        <a href="#top" class="center-link">
+          HOME
+        </a>
+        <a href="#sale" class="center-link">
+          SALE
+        </a>
+        <a href="#seasonal" class="center-link">
+          SEASONAL
+        </a>
+        <a href="#menu" class="center-link">
+          MENU
+        </a>
+        <a href="#why-us" class="center-link">
+          WHY US
         </a>
       </div>
-    </div>
-
-    <div class="center-content">
-      <a href="" class="center-link">
-        HOME
-      </a>
-      <a href="" class="center-link">
-        SALE
-      </a>
-      <a href="" class="center-link">
-        SEASONAL
-      </a>
-      <a href="" class="center-link">
-        MENU
-      </a>
-      <a href="" class="center-link">
-        WHY US
-      </a>
-    </div>
-      
-    <div class="rigth-content">
-      <a href="" class="right-link">
-        FAVORITES
-      </a>
-      <a href="" class="right-link">
-        HISTORY
-      </a>
-      <a href="" class="right-link">
-        ACCOUNT
-      </a>
-    </div>
-
-    <div class="burger-menu">
-      <label class="main">
-        Menu
-        <input class="inp" checked="" type="checkbox" />
-        <div class="bar">
-          <span class="top bar-list"></span>
-          <span class="middle bar-list"></span>
-          <span class="bottom bar-list"></span>
-        </div>
-  
-        <section class="menu-container">
-  
-          <div id="accordian">
-            <ul class="show-dropdown main-navbar">
-              <div class="selector-active"><div class="top"></div><div class="bottom"></div></div>
-              <li class="active">
-                <a href="#">Home</a>
-              </li>
-              <li>
-                <a href="#sale">Sale</a>
-              </li>
-              <li>
-                <a href="#seasonal">Seasonal</a>
-              </li>
-              <li>
-                <a href="#menu">Menu</a>
-              </li>
-              <li>
-                <a href="#why-us">Why us</a>
-              </li>
-              <li>
-                <a href="#">History</a>
-              </li>
-              <li>
-                <a href="#">Account</a>
-              </li>
-              <li>
-                <a href="#">Favorites</a>
-              </li>
-            </ul>
-          </div>
-  
-        </section>
         
-      </label>
-    </div>
-
-  </nav>
-
-  <section class="header">
-
-    <div class="header-content">
-      <div class="header-container">
-        <h1 class="header-content_title">The best site to choose coffee!</h1>
-        <p class="header-content_description">
-          The site helps to choose drinks and snacks for them. It also differs from the rest by booking a place in the establishment and pre-ordering dishes to him.
-        </p>
+      <div class="rigth-content">
+        <a href="#" class="right-link">
+          FAVORITES
+        </a>
+        <a href="#" class="right-link">
+          HISTORY
+        </a>
+        <a href="#" class="right-link">
+          ACCOUNT
+        </a>
       </div>
 
-    </div>
+      <div class="burger-menu">
+        <label class="main">
+          Menu
+          <input class="inp" checked="" type="checkbox" />
+          <div class="bar">
+            <span class="top bar-list"></span>
+            <span class="middle bar-list"></span>
+            <span class="bottom bar-list"></span>
+          </div>
+    
+          <section class="menu-container">
+    
+            <div id="accordian">
+              <ul class="show-dropdown main-navbar">
+                <div class="selector-active"><div class="top"></div><div class="bottom"></div></div>
+                <li class="active">
+                  <a href="#top">Home</a>
+                </li>
+                <li>
+                  <a href="#sale">Sale</a>
+                </li>
+                <li>
+                  <a href="#seasonal">Seasonal</a>
+                </li>
+                <li>
+                  <a href="#menu">Menu</a>
+                </li>
+                <li>
+                  <a href="#why-us">Why us</a>
+                </li>
+                <li>
+                  <a href="#">History</a>
+                </li>
+                <li>
+                  <a href="#">Account</a>
+                </li>
+                <li>
+                  <a href="#">Favorites</a>
+                </li>
+              </ul>
+            </div>
+    
+          </section>
+          
+        </label>
+      </div>
 
-  </section>
+    </nav>
 
+    <section class="header" id="top">
 
-  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-  <script src="js/script.js"></script>
+      <div class="header-content">
+        <div class="header-container">
+          <h1 class="header-content_title">The best site to choose coffee!</h1>
+          <p class="header-content_description">
+            The site helps to choose drinks and snacks for them. It also differs from the rest by booking a place in the establishment and pre-ordering dishes to him.
+          </p>
+        </div>
 
-</body>
+      </div>
+
+    </section>
+
+    <section class="container" id="sale">
+      <h2 class="section-name">SALES</h2>
+
+      <div class="card__container swiper">
+        <div class="card__content">
+          <div class="swiper-wrapper">
+            <article class="card__article swiper-slide">
+
+              <div class="card__data">
+
+                <div class="sale-card">
+                  <div class="sale-card_image-background">
+
+                    <div title="Like" class="heart-container">
+                      <input id="Give-It-An-Id" class="checkbox" type="checkbox">
+                      <div class="svg-container">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="svg-outline" viewBox="0 0 24 24">
+                          <path
+                            d="M17.5,1.917a6.4,6.4,0,0,0-5.5,3.3,6.4,6.4,0,0,0-5.5-3.3A6.8,6.8,0,0,0,0,8.967c0,4.547,4.786,9.513,8.8,12.88a4.974,4.974,0,0,0,6.4,0C19.214,18.48,24,13.514,24,8.967A6.8,6.8,0,0,0,17.5,1.917Zm-3.585,18.4a2.973,2.973,0,0,1-3.83,0C4.947,16.006,2,11.87,2,8.967a4.8,4.8,0,0,1,4.5-5.05A4.8,4.8,0,0,1,11,8.967a1,1,0,0,0,2,0,4.8,4.8,0,0,1,4.5-5.05A4.8,4.8,0,0,1,22,8.967C22,11.87,19.053,16.006,13.915,20.313Z">
+                          </path>
+                        </svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" class="svg-filled" viewBox="0 0 24 24">
+                          <path
+                            d="M17.5,1.917a6.4,6.4,0,0,0-5.5,3.3,6.4,6.4,0,0,0-5.5-3.3A6.8,6.8,0,0,0,0,8.967c0,4.547,4.786,9.513,8.8,12.88a4.974,4.974,0,0,0,6.4,0C19.214,18.48,24,13.514,24,8.967A6.8,6.8,0,0,0,17.5,1.917Z">
+                          </path>
+                        </svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" height="100" width="100" class="svg-celebrate">
+                          <polygon points="10,10 20,20"></polygon>
+                          <polygon points="10,50 20,50"></polygon>
+                          <polygon points="20,80 30,70"></polygon>
+                          <polygon points="90,10 80,20"></polygon>
+                          <polygon points="90,50 80,50"></polygon>
+                          <polygon points="80,80 70,70"></polygon>
+                        </svg>
+                      </div>
+                    </div>
+
+                    <div class="drink-image_container">
+                      <img src="media/drinks-images/drink-image-6.png" alt="drink" class="sale-card_drink-icon">
+                      <div class="image-overlay">
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="sale-card_container">
+
+                    <div class="title-and-price">
+                      <h1 class="sale-card_drink-name">Latte</h1>
+                      <p class="sale-card_drink-price">$15.00</p>
+                    </div>
+
+                    <div class="rating">
+                      <span class="stars">★ ★ ★ ★ ☆</span>
+                      <span class="rating-score">4.5</span>
+                    </div>
+
+                    <div class="sale-drink_address">
+                      <p class="address">
+                        <span>Address:</span> Lorem ipsum dolor sit amet consectetur adipisicing.
+                      </p>
+                    </div>
+
+                    <div class="description-block">
+                      <div class="tabs">
+                        <button class="tab-btn active" data-tab="description">Description</button>
+                        <button class="tab-btn" data-tab="ingredients">Ingredients</button>
+                        <div class="tab-indicator"></div>
+                      </div>
+                      <div class="sale-card_description">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse dicta exercitationem culpa
+                          blanditiis ab corporis quos vero iste similique nihil.</p>
+                      </div>
+                    </div>
+
+                    <div class="calories-and-quantity">
+                      <div class="calories">280 cal</div>
+
+                      <div class="quantity-control">
+                        <button class="quantity-btn minus" type="button" onclick="changeQuantity(this, -1)">-</button>
+                        <input type="text" class="quantity-input" id="quantity-1" value="1" readonly>
+                        <button class="quantity-btn plus" type="button" onclick="changeQuantity(this, 1)">+</button>
+                      </div>
+
+                    </div>
+
+                  </div>
+
+                  <div class="bye-sale">
+                    <button class="pay-btn">
+                      <span class="btn-text">Pay Now</span>
+                      <div class="icon-container">
+                        <svg viewBox="0 0 24 24" class="icon card-icon">
+                          <path
+                            d="M20,8H4V6H20M20,18H4V12H20M20,4H4C2.89,4 2,4.89 2,6V18C2,19.11 2.89,20 4,20H20C21.11,20 22,19.11 22,18V6C22,4.89 21.11,4 20,4Z"
+                            fill="currentColor"></path>
+                        </svg>
+                        <svg viewBox="0 0 24 24" class="icon payment-icon">
+                          <path
+                            d="M2,17H22V21H2V17M6.25,7H9V6H6V3H18V6H15V7H17.75L19,17H5L6.25,7M9,10H15V8H9V10M9,13H15V11H9V13Z"
+                            fill="currentColor"></path>
+                        </svg>
+                        <svg viewBox="0 0 24 24" class="icon dollar-icon">
+                          <path
+                            d="M11.8 10.9c-2.27-.59-3-1.2-3-2.15 0-1.09 1.01-1.85 2.7-1.85 1.78 0 2.44.85 2.5 2.1h2.21c-.07-1.72-1.12-3.3-3.21-3.81V3h-3v2.16c-1.94.42-3.5 1.68-3.5 3.61 0 2.31 1.91 3.46 4.7 4.13 2.5.6 3 1.48 3 2.41 0 .69-.49 1.79-2.7 1.79-2.06 0-2.87-.92-2.98-2.1h-2.2c.12 2.19 1.76 3.42 3.68 3.83V21h3v-2.15c1.95-.37 3.5-1.5 3.5-3.55 0-2.84-2.43-3.81-4.7-4.4z"
+                            fill="currentColor"></path>
+                        </svg>
+
+                        <svg viewBox="0 0 24 24" class="icon wallet-icon default-icon">
+                          <path
+                            d="M21,18V19A2,2 0 0,1 19,21H5C3.89,21 3,20.1 3,19V5A2,2 0 0,1 5,3H19A2,2 0 0,1 21,5V6H12C10.89,6 10,6.9 10,8V16A2,2 0 0,0 12,18M12,16H22V8H12M16,13.5A1.5,1.5 0 0,1 14.5,12A1.5,1.5 0 0,1 16,10.5A1.5,1.5 0 0,1 17.5,12A1.5,1.5 0 0,1 16,13.5Z"
+                            fill="currentColor"></path>
+                        </svg>
+
+                        <svg viewBox="0 0 24 24" class="icon check-icon">
+                          <path d="M9,16.17L4.83,12L3.41,13.41L9,19L21,7L19.59,5.59L9,16.17Z" fill="currentColor"></path>
+                        </svg>
+                      </div>
+                    </button>
+                  </div>
+                </div>
+
+              </div>
+            </article>
+
+            <article class="card__article swiper-slide">
+
+              <div class="card__data">
+
+                <div class="sale-card">
+                  <div class="sale-card_image-background">
+
+                    <div title="Like" class="heart-container">
+                      <input id="Give-It-An-Id" class="checkbox" type="checkbox">
+                      <div class="svg-container">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="svg-outline" viewBox="0 0 24 24">
+                          <path
+                            d="M17.5,1.917a6.4,6.4,0,0,0-5.5,3.3,6.4,6.4,0,0,0-5.5-3.3A6.8,6.8,0,0,0,0,8.967c0,4.547,4.786,9.513,8.8,12.88a4.974,4.974,0,0,0,6.4,0C19.214,18.48,24,13.514,24,8.967A6.8,6.8,0,0,0,17.5,1.917Zm-3.585,18.4a2.973,2.973,0,0,1-3.83,0C4.947,16.006,2,11.87,2,8.967a4.8,4.8,0,0,1,4.5-5.05A4.8,4.8,0,0,1,11,8.967a1,1,0,0,0,2,0,4.8,4.8,0,0,1,4.5-5.05A4.8,4.8,0,0,1,22,8.967C22,11.87,19.053,16.006,13.915,20.313Z">
+                          </path>
+                        </svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" class="svg-filled" viewBox="0 0 24 24">
+                          <path
+                            d="M17.5,1.917a6.4,6.4,0,0,0-5.5,3.3,6.4,6.4,0,0,0-5.5-3.3A6.8,6.8,0,0,0,0,8.967c0,4.547,4.786,9.513,8.8,12.88a4.974,4.974,0,0,0,6.4,0C19.214,18.48,24,13.514,24,8.967A6.8,6.8,0,0,0,17.5,1.917Z">
+                          </path>
+                        </svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" height="100" width="100" class="svg-celebrate">
+                          <polygon points="10,10 20,20"></polygon>
+                          <polygon points="10,50 20,50"></polygon>
+                          <polygon points="20,80 30,70"></polygon>
+                          <polygon points="90,10 80,20"></polygon>
+                          <polygon points="90,50 80,50"></polygon>
+                          <polygon points="80,80 70,70"></polygon>
+                        </svg>
+                      </div>
+                    </div>
+
+                    <div class="drink-image_container">
+                      <img src="media/drinks-images/drink-image-2.png" alt="drink" class="sale-card_drink-icon">
+                      <div class="image-overlay">
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="sale-card_container">
+
+                    <div class="title-and-price">
+                      <h1 class="sale-card_drink-name">Latte</h1>
+                      <p class="sale-card_drink-price">$15.00</p>
+                    </div>
+
+                    <div class="rating">
+                      <span class="stars">★ ★ ★ ★ ☆</span>
+                      <span class="rating-score">4.5</span>
+                    </div>
+
+                    <div class="sale-drink_address">
+                      <p class="address">
+                        <span>Address:</span> Lorem ipsum dolor sit amet consectetur adipisicing.
+                      </p>
+                    </div>
+
+                    <div class="description-block">
+                      <div class="tabs">
+                        <button class="tab-btn active" data-tab="description">Description</button>
+                        <button class="tab-btn" data-tab="ingredients">Ingredients</button>
+                        <div class="tab-indicator"></div>
+                      </div>
+                      <div class="sale-card_description">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse dicta exercitationem culpa
+                          blanditiis ab corporis quos vero iste similique nihil.</p>
+                      </div>
+                    </div>
+
+                    <div class="calories-and-quantity">
+                      <div class="calories">280 cal</div>
+
+                      <div class="quantity-control">
+                        <button class="quantity-btn minus" type="button" onclick="changeQuantity(this, -1)">-</button>
+                        <input type="text" class="quantity-input" id="quantity-2" value="1" readonly>
+                        <button class="quantity-btn plus" type="button" onclick="changeQuantity(this, 1)">+</button>
+                      </div>
+
+                    </div>
+
+                  </div>
+
+                  <div class="bye-sale">
+                    <button class="pay-btn">
+                      <span class="btn-text">Pay Now</span>
+                      <div class="icon-container">
+                        <svg viewBox="0 0 24 24" class="icon card-icon">
+                          <path
+                            d="M20,8H4V6H20M20,18H4V12H20M20,4H4C2.89,4 2,4.89 2,6V18C2,19.11 2.89,20 4,20H20C21.11,20 22,19.11 22,18V6C22,4.89 21.11,4 20,4Z"
+                            fill="currentColor"></path>
+                        </svg>
+                        <svg viewBox="0 0 24 24" class="icon payment-icon">
+                          <path
+                            d="M2,17H22V21H2V17M6.25,7H9V6H6V3H18V6H15V7H17.75L19,17H5L6.25,7M9,10H15V8H9V10M9,13H15V11H9V13Z"
+                            fill="currentColor"></path>
+                        </svg>
+                        <svg viewBox="0 0 24 24" class="icon dollar-icon">
+                          <path
+                            d="M11.8 10.9c-2.27-.59-3-1.2-3-2.15 0-1.09 1.01-1.85 2.7-1.85 1.78 0 2.44.85 2.5 2.1h2.21c-.07-1.72-1.12-3.3-3.21-3.81V3h-3v2.16c-1.94.42-3.5 1.68-3.5 3.61 0 2.31 1.91 3.46 4.7 4.13 2.5.6 3 1.48 3 2.41 0 .69-.49 1.79-2.7 1.79-2.06 0-2.87-.92-2.98-2.1h-2.2c.12 2.19 1.76 3.42 3.68 3.83V21h3v-2.15c1.95-.37 3.5-1.5 3.5-3.55 0-2.84-2.43-3.81-4.7-4.4z"
+                            fill="currentColor"></path>
+                        </svg>
+
+                        <svg viewBox="0 0 24 24" class="icon wallet-icon default-icon">
+                          <path
+                            d="M21,18V19A2,2 0 0,1 19,21H5C3.89,21 3,20.1 3,19V5A2,2 0 0,1 5,3H19A2,2 0 0,1 21,5V6H12C10.89,6 10,6.9 10,8V16A2,2 0 0,0 12,18M12,16H22V8H12M16,13.5A1.5,1.5 0 0,1 14.5,12A1.5,1.5 0 0,1 16,10.5A1.5,1.5 0 0,1 17.5,12A1.5,1.5 0 0,1 16,13.5Z"
+                            fill="currentColor"></path>
+                        </svg>
+
+                        <svg viewBox="0 0 24 24" class="icon check-icon">
+                          <path d="M9,16.17L4.83,12L3.41,13.41L9,19L21,7L19.59,5.59L9,16.17Z" fill="currentColor"></path>
+                        </svg>
+                      </div>
+                    </button>
+                  </div>
+                </div>
+
+              </div>
+
+            </article>
+
+            <article class="card__article swiper-slide">
+
+              <div class="card__data">
+
+                <div class="sale-card">
+                  <div class="sale-card_image-background">
+
+                    <div title="Like" class="heart-container">
+                      <input id="Give-It-An-Id" class="checkbox" type="checkbox">
+                      <div class="svg-container">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="svg-outline" viewBox="0 0 24 24">
+                          <path
+                            d="M17.5,1.917a6.4,6.4,0,0,0-5.5,3.3,6.4,6.4,0,0,0-5.5-3.3A6.8,6.8,0,0,0,0,8.967c0,4.547,4.786,9.513,8.8,12.88a4.974,4.974,0,0,0,6.4,0C19.214,18.48,24,13.514,24,8.967A6.8,6.8,0,0,0,17.5,1.917Zm-3.585,18.4a2.973,2.973,0,0,1-3.83,0C4.947,16.006,2,11.87,2,8.967a4.8,4.8,0,0,1,4.5-5.05A4.8,4.8,0,0,1,11,8.967a1,1,0,0,0,2,0,4.8,4.8,0,0,1,4.5-5.05A4.8,4.8,0,0,1,22,8.967C22,11.87,19.053,16.006,13.915,20.313Z">
+                          </path>
+                        </svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" class="svg-filled" viewBox="0 0 24 24">
+                          <path
+                            d="M17.5,1.917a6.4,6.4,0,0,0-5.5,3.3,6.4,6.4,0,0,0-5.5-3.3A6.8,6.8,0,0,0,0,8.967c0,4.547,4.786,9.513,8.8,12.88a4.974,4.974,0,0,0,6.4,0C19.214,18.48,24,13.514,24,8.967A6.8,6.8,0,0,0,17.5,1.917Z">
+                          </path>
+                        </svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" height="100" width="100" class="svg-celebrate">
+                          <polygon points="10,10 20,20"></polygon>
+                          <polygon points="10,50 20,50"></polygon>
+                          <polygon points="20,80 30,70"></polygon>
+                          <polygon points="90,10 80,20"></polygon>
+                          <polygon points="90,50 80,50"></polygon>
+                          <polygon points="80,80 70,70"></polygon>
+                        </svg>
+                      </div>
+                    </div>
+
+                    <div class="drink-image_container">
+                      <img src="media/drinks-images/drink-image-3.png" alt="drink" class="sale-card_drink-icon">
+                      <div class="image-overlay">
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="sale-card_container">
+
+                    <div class="title-and-price">
+                      <h1 class="sale-card_drink-name">Latte</h1>
+                      <p class="sale-card_drink-price">$15.00</p>
+                    </div>
+
+                    <div class="rating">
+                      <span class="stars">★ ★ ★ ★ ☆</span>
+                      <span class="rating-score">4.5</span>
+                    </div>
+
+                    <div class="sale-drink_address">
+                      <p class="address">
+                        <span>Address:</span> Lorem ipsum dolor sit amet consectetur adipisicing.
+                      </p>
+                    </div>
+
+                    <div class="description-block">
+                      <div class="tabs">
+                        <button class="tab-btn active" data-tab="description">Description</button>
+                        <button class="tab-btn" data-tab="ingredients">Ingredients</button>
+                        <div class="tab-indicator"></div>
+                      </div>
+                      <div class="sale-card_description">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse dicta exercitationem culpa
+                          blanditiis ab corporis quos vero iste similique nihil.</p>
+                      </div>
+                    </div>
+
+                    <div class="calories-and-quantity">
+                      <div class="calories">280 cal</div>
+
+                      <div class="quantity-control">
+                        <button class="quantity-btn minus" type="button" onclick="changeQuantity(this, -1)">-</button>
+                        <input type="text" class="quantity-input" id="quantity-3" value="1" readonly>
+                        <button class="quantity-btn plus" type="button" onclick="changeQuantity(this, 1)">+</button>
+                      </div>
+
+                    </div>
+
+                  </div>
+
+                  <div class="bye-sale">
+                    <button class="pay-btn">
+                      <span class="btn-text">Pay Now</span>
+                      <div class="icon-container">
+                        <svg viewBox="0 0 24 24" class="icon card-icon">
+                          <path
+                            d="M20,8H4V6H20M20,18H4V12H20M20,4H4C2.89,4 2,4.89 2,6V18C2,19.11 2.89,20 4,20H20C21.11,20 22,19.11 22,18V6C22,4.89 21.11,4 20,4Z"
+                            fill="currentColor"></path>
+                        </svg>
+                        <svg viewBox="0 0 24 24" class="icon payment-icon">
+                          <path
+                            d="M2,17H22V21H2V17M6.25,7H9V6H6V3H18V6H15V7H17.75L19,17H5L6.25,7M9,10H15V8H9V10M9,13H15V11H9V13Z"
+                            fill="currentColor"></path>
+                        </svg>
+                        <svg viewBox="0 0 24 24" class="icon dollar-icon">
+                          <path
+                            d="M11.8 10.9c-2.27-.59-3-1.2-3-2.15 0-1.09 1.01-1.85 2.7-1.85 1.78 0 2.44.85 2.5 2.1h2.21c-.07-1.72-1.12-3.3-3.21-3.81V3h-3v2.16c-1.94.42-3.5 1.68-3.5 3.61 0 2.31 1.91 3.46 4.7 4.13 2.5.6 3 1.48 3 2.41 0 .69-.49 1.79-2.7 1.79-2.06 0-2.87-.92-2.98-2.1h-2.2c.12 2.19 1.76 3.42 3.68 3.83V21h3v-2.15c1.95-.37 3.5-1.5 3.5-3.55 0-2.84-2.43-3.81-4.7-4.4z"
+                            fill="currentColor"></path>
+                        </svg>
+
+                        <svg viewBox="0 0 24 24" class="icon wallet-icon default-icon">
+                          <path
+                            d="M21,18V19A2,2 0 0,1 19,21H5C3.89,21 3,20.1 3,19V5A2,2 0 0,1 5,3H19A2,2 0 0,1 21,5V6H12C10.89,6 10,6.9 10,8V16A2,2 0 0,0 12,18M12,16H22V8H12M16,13.5A1.5,1.5 0 0,1 14.5,12A1.5,1.5 0 0,1 16,10.5A1.5,1.5 0 0,1 17.5,12A1.5,1.5 0 0,1 16,13.5Z"
+                            fill="currentColor"></path>
+                        </svg>
+
+                        <svg viewBox="0 0 24 24" class="icon check-icon">
+                          <path d="M9,16.17L4.83,12L3.41,13.41L9,19L21,7L19.59,5.59L9,16.17Z" fill="currentColor"></path>
+                        </svg>
+                      </div>
+                    </button>
+                  </div>
+                </div>
+
+              </div>
+
+            </article>
+
+            <article class="card__article swiper-slide">
+
+              <div class="card__data">
+
+                <div class="sale-card">
+                  <div class="sale-card_image-background">
+
+                    <div title="Like" class="heart-container">
+                      <input id="Give-It-An-Id" class="checkbox" type="checkbox">
+                      <div class="svg-container">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="svg-outline" viewBox="0 0 24 24">
+                          <path
+                            d="M17.5,1.917a6.4,6.4,0,0,0-5.5,3.3,6.4,6.4,0,0,0-5.5-3.3A6.8,6.8,0,0,0,0,8.967c0,4.547,4.786,9.513,8.8,12.88a4.974,4.974,0,0,0,6.4,0C19.214,18.48,24,13.514,24,8.967A6.8,6.8,0,0,0,17.5,1.917Zm-3.585,18.4a2.973,2.973,0,0,1-3.83,0C4.947,16.006,2,11.87,2,8.967a4.8,4.8,0,0,1,4.5-5.05A4.8,4.8,0,0,1,11,8.967a1,1,0,0,0,2,0,4.8,4.8,0,0,1,4.5-5.05A4.8,4.8,0,0,1,22,8.967C22,11.87,19.053,16.006,13.915,20.313Z">
+                          </path>
+                        </svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" class="svg-filled" viewBox="0 0 24 24">
+                          <path
+                            d="M17.5,1.917a6.4,6.4,0,0,0-5.5,3.3,6.4,6.4,0,0,0-5.5-3.3A6.8,6.8,0,0,0,0,8.967c0,4.547,4.786,9.513,8.8,12.88a4.974,4.974,0,0,0,6.4,0C19.214,18.48,24,13.514,24,8.967A6.8,6.8,0,0,0,17.5,1.917Z">
+                          </path>
+                        </svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" height="100" width="100" class="svg-celebrate">
+                          <polygon points="10,10 20,20"></polygon>
+                          <polygon points="10,50 20,50"></polygon>
+                          <polygon points="20,80 30,70"></polygon>
+                          <polygon points="90,10 80,20"></polygon>
+                          <polygon points="90,50 80,50"></polygon>
+                          <polygon points="80,80 70,70"></polygon>
+                        </svg>
+                      </div>
+                    </div>
+
+                    <div class="drink-image_container">
+                      <img src="media/drinks-images/drink-image-4.png" alt="drink" class="sale-card_drink-icon">
+                      <div class="image-overlay">
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="sale-card_container">
+
+                    <div class="title-and-price">
+                      <h1 class="sale-card_drink-name">Latte</h1>
+                      <p class="sale-card_drink-price">$15.00</p>
+                    </div>
+
+                    <div class="rating">
+                      <span class="stars">★ ★ ★ ★ ☆</span>
+                      <span class="rating-score">4.5</span>
+                    </div>
+
+                    <div class="sale-drink_address">
+                      <p class="address">
+                        <span>Address:</span> Lorem ipsum dolor sit amet consectetur adipisicing.
+                      </p>
+                    </div>
+
+                    <div class="description-block">
+                      <div class="tabs">
+                        <button class="tab-btn active" data-tab="description">Description</button>
+                        <button class="tab-btn" data-tab="ingredients">Ingredients</button>
+                        <div class="tab-indicator"></div>
+                      </div>
+                      <div class="sale-card_description">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse dicta exercitationem culpa
+                          blanditiis ab corporis quos vero iste similique nihil.</p>
+                      </div>
+                    </div>
+
+                    <div class="calories-and-quantity">
+                      <div class="calories">280 cal</div>
+
+                      <div class="quantity-control">
+                        <button class="quantity-btn minus" type="button" onclick="changeQuantity(this, -1)">-</button>
+                        <input type="text" class="quantity-input" id="quantity-4" value="1" readonly>
+                        <button class="quantity-btn plus" type="button" onclick="changeQuantity(this, 1)">+</button>
+                      </div>
+
+                    </div>
+
+                  </div>
+
+                  <div class="bye-sale">
+                    <button class="pay-btn">
+                      <span class="btn-text">Pay Now</span>
+                      <div class="icon-container">
+                        <svg viewBox="0 0 24 24" class="icon card-icon">
+                          <path
+                            d="M20,8H4V6H20M20,18H4V12H20M20,4H4C2.89,4 2,4.89 2,6V18C2,19.11 2.89,20 4,20H20C21.11,20 22,19.11 22,18V6C22,4.89 21.11,4 20,4Z"
+                            fill="currentColor"></path>
+                        </svg>
+                        <svg viewBox="0 0 24 24" class="icon payment-icon">
+                          <path
+                            d="M2,17H22V21H2V17M6.25,7H9V6H6V3H18V6H15V7H17.75L19,17H5L6.25,7M9,10H15V8H9V10M9,13H15V11H9V13Z"
+                            fill="currentColor"></path>
+                        </svg>
+                        <svg viewBox="0 0 24 24" class="icon dollar-icon">
+                          <path
+                            d="M11.8 10.9c-2.27-.59-3-1.2-3-2.15 0-1.09 1.01-1.85 2.7-1.85 1.78 0 2.44.85 2.5 2.1h2.21c-.07-1.72-1.12-3.3-3.21-3.81V3h-3v2.16c-1.94.42-3.5 1.68-3.5 3.61 0 2.31 1.91 3.46 4.7 4.13 2.5.6 3 1.48 3 2.41 0 .69-.49 1.79-2.7 1.79-2.06 0-2.87-.92-2.98-2.1h-2.2c.12 2.19 1.76 3.42 3.68 3.83V21h3v-2.15c1.95-.37 3.5-1.5 3.5-3.55 0-2.84-2.43-3.81-4.7-4.4z"
+                            fill="currentColor"></path>
+                        </svg>
+
+                        <svg viewBox="0 0 24 24" class="icon wallet-icon default-icon">
+                          <path
+                            d="M21,18V19A2,2 0 0,1 19,21H5C3.89,21 3,20.1 3,19V5A2,2 0 0,1 5,3H19A2,2 0 0,1 21,5V6H12C10.89,6 10,6.9 10,8V16A2,2 0 0,0 12,18M12,16H22V8H12M16,13.5A1.5,1.5 0 0,1 14.5,12A1.5,1.5 0 0,1 16,10.5A1.5,1.5 0 0,1 17.5,12A1.5,1.5 0 0,1 16,13.5Z"
+                            fill="currentColor"></path>
+                        </svg>
+
+                        <svg viewBox="0 0 24 24" class="icon check-icon">
+                          <path d="M9,16.17L4.83,12L3.41,13.41L9,19L21,7L19.59,5.59L9,16.17Z" fill="currentColor"></path>
+                        </svg>
+                      </div>
+                    </button>
+                  </div>
+                </div>
+
+              </div>
+
+            </article>
+
+            <article class="card__article swiper-slide">
+
+              <div class="card__data">
+
+                <div class="sale-card">
+                  <div class="sale-card_image-background">
+
+                    <div title="Like" class="heart-container">
+                      <input id="Give-It-An-Id" class="checkbox" type="checkbox">
+                      <div class="svg-container">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="svg-outline" viewBox="0 0 24 24">
+                          <path
+                            d="M17.5,1.917a6.4,6.4,0,0,0-5.5,3.3,6.4,6.4,0,0,0-5.5-3.3A6.8,6.8,0,0,0,0,8.967c0,4.547,4.786,9.513,8.8,12.88a4.974,4.974,0,0,0,6.4,0C19.214,18.48,24,13.514,24,8.967A6.8,6.8,0,0,0,17.5,1.917Zm-3.585,18.4a2.973,2.973,0,0,1-3.83,0C4.947,16.006,2,11.87,2,8.967a4.8,4.8,0,0,1,4.5-5.05A4.8,4.8,0,0,1,11,8.967a1,1,0,0,0,2,0,4.8,4.8,0,0,1,4.5-5.05A4.8,4.8,0,0,1,22,8.967C22,11.87,19.053,16.006,13.915,20.313Z">
+                          </path>
+                        </svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" class="svg-filled" viewBox="0 0 24 24">
+                          <path
+                            d="M17.5,1.917a6.4,6.4,0,0,0-5.5,3.3,6.4,6.4,0,0,0-5.5-3.3A6.8,6.8,0,0,0,0,8.967c0,4.547,4.786,9.513,8.8,12.88a4.974,4.974,0,0,0,6.4,0C19.214,18.48,24,13.514,24,8.967A6.8,6.8,0,0,0,17.5,1.917Z">
+                          </path>
+                        </svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" height="100" width="100" class="svg-celebrate">
+                          <polygon points="10,10 20,20"></polygon>
+                          <polygon points="10,50 20,50"></polygon>
+                          <polygon points="20,80 30,70"></polygon>
+                          <polygon points="90,10 80,20"></polygon>
+                          <polygon points="90,50 80,50"></polygon>
+                          <polygon points="80,80 70,70"></polygon>
+                        </svg>
+                      </div>
+                    </div>
+
+                    <div class="drink-image_container">
+                      <img src="media/drinks-images/drink-image-5.png" alt="drink" class="sale-card_drink-icon">
+                      <div class="image-overlay">
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="sale-card_container">
+
+                    <div class="title-and-price">
+                      <h1 class="sale-card_drink-name">Latte</h1>
+                      <p class="sale-card_drink-price">$15.00</p>
+                    </div>
+
+                    <div class="rating">
+                      <span class="stars">★ ★ ★ ★ ☆</span>
+                      <span class="rating-score">4.5</span>
+                    </div>
+
+                    <div class="sale-drink_address">
+                      <p class="address">
+                        <span>Address:</span> Lorem ipsum dolor sit amet consectetur adipisicing.
+                      </p>
+                    </div>
+
+                    <div class="description-block">
+                      <div class="tabs">
+                        <button class="tab-btn active" data-tab="description">Description</button>
+                        <button class="tab-btn" data-tab="ingredients">Ingredients</button>
+                        <div class="tab-indicator"></div>
+                      </div>
+                      <div class="sale-card_description">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse dicta exercitationem culpa
+                          blanditiis ab corporis quos vero iste similique nihil.</p>
+                      </div>
+                    </div>
+
+                    <div class="calories-and-quantity">
+                      <div class="calories">280 cal</div>
+
+                      <div class="quantity-control">
+                        <button class="quantity-btn minus" type="button" onclick="changeQuantity(this, -1)">-</button>
+                        <input type="text" class="quantity-input" id="quantity-5" value="1" readonly>
+                        <button class="quantity-btn plus" type="button" onclick="changeQuantity(this, 1)">+</button>
+                      </div>
+
+                    </div>
+
+                  </div>
+
+                  <div class="bye-sale">
+                    <button class="pay-btn">
+                      <span class="btn-text">Pay Now</span>
+                      <div class="icon-container">
+                        <svg viewBox="0 0 24 24" class="icon card-icon">
+                          <path
+                            d="M20,8H4V6H20M20,18H4V12H20M20,4H4C2.89,4 2,4.89 2,6V18C2,19.11 2.89,20 4,20H20C21.11,20 22,19.11 22,18V6C22,4.89 21.11,4 20,4Z"
+                            fill="currentColor"></path>
+                        </svg>
+                        <svg viewBox="0 0 24 24" class="icon payment-icon">
+                          <path
+                            d="M2,17H22V21H2V17M6.25,7H9V6H6V3H18V6H15V7H17.75L19,17H5L6.25,7M9,10H15V8H9V10M9,13H15V11H9V13Z"
+                            fill="currentColor"></path>
+                        </svg>
+                        <svg viewBox="0 0 24 24" class="icon dollar-icon">
+                          <path
+                            d="M11.8 10.9c-2.27-.59-3-1.2-3-2.15 0-1.09 1.01-1.85 2.7-1.85 1.78 0 2.44.85 2.5 2.1h2.21c-.07-1.72-1.12-3.3-3.21-3.81V3h-3v2.16c-1.94.42-3.5 1.68-3.5 3.61 0 2.31 1.91 3.46 4.7 4.13 2.5.6 3 1.48 3 2.41 0 .69-.49 1.79-2.7 1.79-2.06 0-2.87-.92-2.98-2.1h-2.2c.12 2.19 1.76 3.42 3.68 3.83V21h3v-2.15c1.95-.37 3.5-1.5 3.5-3.55 0-2.84-2.43-3.81-4.7-4.4z"
+                            fill="currentColor"></path>
+                        </svg>
+
+                        <svg viewBox="0 0 24 24" class="icon wallet-icon default-icon">
+                          <path
+                            d="M21,18V19A2,2 0 0,1 19,21H5C3.89,21 3,20.1 3,19V5A2,2 0 0,1 5,3H19A2,2 0 0,1 21,5V6H12C10.89,6 10,6.9 10,8V16A2,2 0 0,0 12,18M12,16H22V8H12M16,13.5A1.5,1.5 0 0,1 14.5,12A1.5,1.5 0 0,1 16,10.5A1.5,1.5 0 0,1 17.5,12A1.5,1.5 0 0,1 16,13.5Z"
+                            fill="currentColor"></path>
+                        </svg>
+
+                        <svg viewBox="0 0 24 24" class="icon check-icon">
+                          <path d="M9,16.17L4.83,12L3.41,13.41L9,19L21,7L19.59,5.59L9,16.17Z" fill="currentColor"></path>
+                        </svg>
+                      </div>
+                    </button>
+                  </div>
+                </div>
+
+              </div>
+
+            </article>
+          </div>
+        </div>
+
+        <div class="swiper-button-next">
+          <i class="ri-arrow-right-s-line"></i>
+        </div>
+
+        <div class="swiper-button-prev">
+          <i class="ri-arrow-left-s-line"></i>
+        </div>
+
+        <div class="swiper-pagination"></div>
+      </div>
+    </section>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="js/script.js"></script>
+    <script src="js/swiper-bundle.min.js"></script>
+    <script src="js/main.js"></script>
+  </body>
 </html>
